@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+
+}
+
+/*header begin*/
+
+header {
+    width: 70%;
+    height: 7vh;
+}
+
+.soc {
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+    gap: 20px
+}
+
+.soc a {
+    text-decoration: none;
+}
+
+.soc img {
+    width: 24px;
+    height: 24px;
+}
+
+/*header end*/
+
+/*main begin*/
+main {
+    position: absolute;
+    width: 100%;
+    height: 85vh;
+    top: 7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-section {
+    background-color: #4FBFA5;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-section .menu {
+    display: flex;
+    justify-content: center;
+margin-bottom: 8px;
+
+}
+
+.main-section .menu-item {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.main-section .nav {
+    width: 75%;
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+}
+
+.main-section a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+.main-section a:hover {
+    
+    color:  #4FBFA5;
+    background-color: white;
+    padding: 7px;
+    border-radius: 5px;
+
+}
+
+.main-section button {
+    width: 92px;
+    height: 38px;
+    padding: 10px 15px 10px 15px;
+    transition: all 0.5s;
+}
+
+.main-section button:hover {
+    background-color: #4FBFA5;
+    color: white;
+    border: 1px solid white;
+}
+
+ .main-section .screen {
+    width: 100%;
+    height: 44vh;
+    display: flex;
+    justify-content: center;
+}
+
+.screen_items {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+ .screen_items .screen_desc {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.screen_desc h1 {
+    color: white;
+}
+
+.screen_desc p {
+    color: white;
+}
+
+.screen_desc button {
+    color: white;
+    background-color: #00868A;
+    border: none;
+}
+
+.screen_items .screen_slider img {
+    width: 416px;
+    height: 266px;
+}
+
+
+.offers {
+    
+    width: 70%;
+    height: 35%;
+}
+
+.offers h1 {
+    text-align: center;
+    font-weight: 400;
+    color: #00868A;
+    margin-bottom: 7px;
+}
+
+.offers_items {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+
+}
+
+.offers_items .items {
+    width: 17%;
+    height: 80%;
+    background-color: #00868A;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.offers_items .item_image {
+    width: 100%;
+    height: 75%;
+    position: relative;
+}
+
+.offers_items .item_image img {
+    width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.offers_items .item_image .mark_new {
+    width: 45px;
+  height: 30px;
+  position: absolute;
+  background-color: #4FBFA5;
+  top: 10px;
+  left: 10px;
+  padding: 5px;
+  color: white;
+}
+
+.mark_new_show {
+z-index: 1;
+}
+
+.offers_items .item_name {
+    width: 50%;
+    color: white;
+    font-weight: 200;
+    padding-left: 3px;
+    
+}
+
+.arrow {
+    padding: 5px 10px 5px 10px;
+    margin: 5PX;
+    background-color: #00868A;
+    border: 1px solid white;
+    height: 30PX;
+}
+
+.arrow span {
+	position: relative;
+	width: 20px;
+	height: 1px;
+	background-color: white;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+	left:0;
+	display: block;
+}
+
+.arrow span::after {
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 1px;
+	top: -3px;
+	right: -2px;
+	background-color: white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+	transform: rotate(45deg);
+}
+
+.arrow span::before {
+	content: '';
+	position: absolute;
+	width: 1px;
+	height: 10px;
+	top: -1px;
+    right: 2px;
+	background-color: white;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(45deg);
+	
+}
+
+
+
+/*main begin*/
+
+footer {
+    width: 70%;
+    height: 7vh;
+}
